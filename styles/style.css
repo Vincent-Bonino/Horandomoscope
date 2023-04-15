@@ -1,0 +1,93 @@
+/* Global */
+body {
+    background: white;
+}
+
+/* Header */
+header {
+    font-size: 30px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #fcf7e7;
+
+    margin-top: -35px;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+header h1 {
+    text-shadow: 2px 2px 5px #b79e56;
+}
+
+/* Nav & content */
+main {
+    display: flex;
+}
+.sidenav {
+    flex: 0 0 20%;
+    padding-left: 20px;
+}
+.content-container {
+    flex: 1;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 15px;
+}
+
+/* Smaller scale */
+
+/* Titles */
+.site-name:hover span {
+    display: none
+}
+.site-name:hover:before {
+    content: "HoRandom-oscope";
+}
+
+main h1, h2 {
+    color: #b79e56;
+}
+.content h3 {
+    color: #029294;
+}
+
+
+/* Navigation list */
+nav li {
+    font-size: 19px;
+    line-height: 1.7;
+}
+a {
+    color: black;
+    outline: none;
+}
+
+@counter-style repeating-emoji {
+    system: cyclic;
+    symbols: "\2648" "\2649" "\264A" "\264B" "\264C" "\264D" "\264E" "\264F" "\2650" "\2651" "\2652" "\2653";
+    suffix: " ";
+}
+/* Add this class to the ul or ol element */
+.repeating-counter-rule {
+    list-style-type: repeating-emoji;
+}
+
+
+/* Responsivity */
+
+/* Footer */
+footer {
+    text-align: center;
+    background: linear-gradient(white, #fcf7e7);
+
+    padding-top: 100px;
+    padding-bottom: 10px;
+    margin-bottom: -20px;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+footer p {
+    color: rgba(128, 128, 128, 0.5);
+}

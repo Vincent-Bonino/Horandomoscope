@@ -1,0 +1,15 @@
+const advice_list = [
+    "Advice 1",
+    "Advice 2",
+    "Advice 3",
+    "Advice 4",
+    "Advice 5",
+    "Advice 6",
+    "Advice 7",
+    "Advice 8",
+    "Advice 9",
+    "Advice 10",
+    "Advice 11",
+    "Advice 12",
+    "Advice 13",
+]

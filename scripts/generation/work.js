@@ -1,0 +1,15 @@
+const work_list = [
+    "Work 1",
+    "Work 2",
+    "Work 3",
+    "Work 4",
+    "Work 5",
+    "Work 6",
+    "Work 7",
+    "Work 8",
+    "Work 9",
+    "Work 10",
+    "Work 11",
+    "Work 12",
+    "Work 13",
+]
