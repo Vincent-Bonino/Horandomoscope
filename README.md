@@ -4,7 +4,7 @@ Simple static website, generating a random horoscope each day.
 
 ## Sources / inspirations
 
-Generic horoscope promps:
+Generic horoscope prompts:
 ChatGPT - ©OpenIA
 
 Colors, style:
