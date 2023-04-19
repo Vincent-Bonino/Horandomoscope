@@ -1,0 +1,33 @@
+/* CSS for mobile responsive layout */
+@media (max-width: 768px) {
+    /* Move the header to the top */
+    header {
+        text-align: center;
+        padding: 20px;
+    }
+
+    /* Move the navigation menu to the top */
+    main {
+        flex-direction: column; /* Set flex-direction to column for mobile devices */
+    }
+    .sidenav {
+        order: 1; /* Set order property to 1 to place sidenav above content-container on mobile */
+        width: 100%; /* Set width to 100% to take up full width of viewport on mobile */
+        position: inherit;
+
+        max-height: 100vh; /* Set max-height to restrict the height of sidenav to the viewport height */
+    }
+    /* Adjust the content container to have top margin for the navigation menu */
+    .content-container {
+        order: 2; /* Set order property to 2 to place content-container below sidenav on mobile */
+
+        margin-top: 60px; /* Adjust the value to create space for the navigation menu */
+        padding: 20px;
+    }
+
+    /* Update the font size and padding of the navigation menu items */
+    .repeating-counter-rule li a {
+        font-size: 18px;
+        padding: 8px;
+    }
+}

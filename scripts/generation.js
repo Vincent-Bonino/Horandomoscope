@@ -2,14 +2,12 @@
 const today_date = new Date()
 const seed = today_date.getDate() + today_date.getMonth() * Math.pow(10, 2) + today_date.getFullYear() * Math.pow(10, 4)  // Generate number ddmmyyyy
 const generator = Math.seedrandom(seed.toString())
-console.log("Seed =", seed)
 
 function generate_content() {
     for (var i = 0; i < signes.length; i++) {
         signe = signes[i]
         signe_content = `${signe}-content`
 
-        console.log("Processing sign", signe)
         content_div = document.getElementById(signe_content)
         content_div.innerHTML = random_content()
       }
@@ -20,7 +18,6 @@ function random_content() {
     do {
         work_index = Math.floor(Math.random() * work_list.length)
     } while (used_work.includes(work_index))
-    console.log("OK, use it")
     used_work.push(work_index)
     result = content_structure.replace("<work_data>", work_list[work_index])
 

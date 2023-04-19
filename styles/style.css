@@ -27,6 +27,12 @@ main {
 .sidenav {
     flex: 0 0 20%;
     padding-left: 20px;
+
+    /* Sticky */
+    position: -webkit-sticky; /* for Safari */
+    position: sticky;
+    top: 0;
+    align-self: flex-start; /* <-- this is the fix */
 }
 .content-container {
     flex: 1;
@@ -38,12 +44,13 @@ main {
 /* Smaller scale */
 
 /* Titles */
-.site-name:hover span {
+.site-name:hover span, .site-name:active span {
     display: none
 }
-.site-name:hover:before {
+.site-name:hover:before, .site-name:active:before {
     content: "HoRandom-oscope";
 }
+
 
 main h1, h2 {
     color: #b79e56;
